@@ -19,7 +19,7 @@ if (TARGET tinyusb_device)
     )
 
     # Add pico_stdlib library which aggregates commonly used features
-    target_link_libraries(main pico_stdlib)
+    target_link_libraries(main pico_stdlib hardware_spi)
 
     # enable usb output, disable uart output
     pico_enable_stdio_usb(main 1)
